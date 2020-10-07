@@ -209,7 +209,8 @@ if Var.PRIVATE_GROUP_ID is not None:
             f"Hi buddy my master {DEFAULTUSER} haven't approved you yet. so ,"
             "Leave your name,reason and 10k$ and hopefully you'll get a reply within 2 light years.\n\n"
             "**Send** `/start` ** so that my master can decide why you're here.**"
-        )
+            "**Note:** Don't try to flood. All you have is 6 message before my Master Responding So Don't try to get Block."
+       )
         if USER_BOT_NO_WARN == message_text:
             # userbot's should not reply to other userbot's
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
