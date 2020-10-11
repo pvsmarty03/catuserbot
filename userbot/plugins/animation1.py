@@ -199,7 +199,7 @@ async def _(event):
 @borg.on(sudo_cmd(pattern=r"candy$", allow_sudo=True))
 async def _(event):
     event = await edit_or_reply(event, "candy")
-    deq = deque(list("🍦P🍧R🍩A🍪V🎂E🍰E🧁N🍫🍬🍭"))
+    deq = deque(list("🍦P🍧R🍩A🍪V🎂E🍰E🧁N🍫N🍬I🍭R🥪U"))
     for _ in range(999):
         await asyncio.sleep(0.4)
         await event.edit("".join(deq))
