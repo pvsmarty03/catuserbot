@@ -1,0 +1,11 @@
+from ..utils import admin_cmd
+
+
+
+
+@borg.on(admin_cmd(pattern="gnt$"))
+async def gn(event):
+    await event.edit(
+" yes          yes          yesyes \n yesyes    yes      yes         yes \n yes  yes  yes     yes           yes \n yes    yesyes     yes           yes \n yes    yesyes      yes        yes \n yes          yes          yesyes \n😉😉😉😉😉😉😉😉😉😉😉"
+
+)
