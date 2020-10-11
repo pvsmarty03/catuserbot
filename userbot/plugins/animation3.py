@@ -11,7 +11,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
 async def _(event):
     if event.fwd_from:
         return
-    deq = deque(list("🦋✨🦋✨🦋✨🦋✨"))
+    deq = deque(list("🍃🦋🍃✨🦋🍃✨🦋🍃✨🦋🍃✨"))
     for _ in range(48):
         await asyncio.sleep(0.1)
         await event.edit("".join(deq))
@@ -280,3 +280,55 @@ async def _(event):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 8])
+
+        
+        
+        
+     @borg.on(admin_cmd(pattern="hateyou", outgoing=True))
+async def _(event):
+    if event.fwd_from:
+        return
+    animation_interval = 0.5
+    animation_ttl = range(70)
+    await event.edit("hateyou")
+    animation_chars = [
+        "😀",
+        "👩‍🎨",
+        "😁",
+        "😂",
+        "🤣",
+        "😃",
+        "😄",
+        "😅",
+        "😊",
+        "☺",
+        "🙂",
+        "🤔",
+        "🤨",
+        "😐",
+        "😑",
+        "😶",
+        "😣",
+        "😥",
+        "😮",
+        "🤐",
+        "😯",
+        "😴",
+        "😔",
+        "😕",
+        "☹",
+        "🙁",
+        "😖",
+        "😞",
+        "😟",
+        "😢",
+        "😭",
+        "🤯",
+        "💔",
+        "❤",
+        "I Hate You 💔",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 35])
+   
